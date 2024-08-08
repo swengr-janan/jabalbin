@@ -1,45 +1,63 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useTheme } from "../ThemeContext";
-import "../styles/Navbar.css";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import "../styles/Navbar.css"; // Ensure you have the correct path to your CSS file
 
-const Navbar = () => {
-  const { theme, toggleTheme } = useTheme();
+function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  let navbarClasses = ["navbar"];
+  if (scrolled) {
+    navbarClasses.push("scrolled");
+  }
 
   return (
-    <nav className={`navbar ${theme}`}>
-      <div className="nav-container">
-        <Link to="/" className="nav-logo">
-          <img src="/path/to/logo.png" alt="MyPortfolio" />
-        </Link>
+    <nav className={navbarClasses.join(" ")}>
+      <div className="navbar-container">
+        <NavLink to="/" className="navbar-logo">
+          <img src="/ja-logo.png" alt="My Logo" style={{ height: "200px" }} />
+        </NavLink>
         <ul className="nav-menu">
           <li className="nav-item">
-            <Link to="/" className="nav-links">
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <NavLink to="/about" className="nav-links">
               About
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/projects" className="nav-links">
+            <NavLink to="/projects" className="nav-links">
               Projects
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-links">
+            <NavLink to="/contact" className="nav-links">
               Contact
-            </Link>
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink to="/socials" className="nav-links">
+              Socials
+            </NavLink>
           </li>
         </ul>
-        <button className="theme-toggle" onClick={toggleTheme}>
-          Switch to {theme === "light" ? "Dark" : "Light"} Theme
-        </button>
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;

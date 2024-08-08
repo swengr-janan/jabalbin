@@ -1,17 +1,23 @@
 import React from "react";
-import { useTheme } from "../ThemeContext";
-import "../styles/Home.css";
+import "../styles/Home.css"; // Ensure you have the correct path to your CSS file
 
-const Home = () => {
-  const { theme, toggleTheme } = useTheme();
-
+function Home() {
   return (
-    <div className={`home ${theme}`}>
-      <h1>Welcome to My Portfolio</h1>
-      <p>Current theme: {theme}</p>
-      <button onClick={toggleTheme}>Toggle Theme</button>
+    <div className="home-container">
+      {/* Replace the video element with an image element */}
+      <img src="/bg-black.jpg" alt="Hero" className="hero-image" />
+      <div className="overlay"></div>
+      <div className="content">
+        <div className="description left">
+          <p>Quality Assurance Specialist</p>
+        </div>
+        <img src="/Balbz.png" alt="My Face" className="face-image" />
+        <div className="description right">
+          <p>Software Engineer</p>
+        </div>
+      </div>
     </div>
   );
-};
+}
 
 export default Home;

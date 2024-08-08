@@ -1,32 +1,28 @@
+/* App.css */
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: Arial, sans-serif; /* Set a default font */
 }
 
-.light {
-  background-color: var(--background-color);
-  color: var(--text-color);
+* {
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
-.dark {
-  background-color: var(--background-color);
-  color: var(--text-color);
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  border-bottom: 1px solid var(--border-color);
+ul {
+  list-style-type: none; /* Remove bullets from lists */
+  padding: 0;
+  margin: 0;
 }
 
-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-main {
-  padding: 1rem;
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto;
 }
