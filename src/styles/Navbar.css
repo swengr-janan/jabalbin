@@ -1,0 +1,128 @@
+/* Navbar container styles */
+.navbar {
+  background: var(--background-color);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+/* Navbar inner container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+/* Navbar logo styles */
+.nav-logo img {
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Navbar menu styles */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+/* Navbar item styles */
+.nav-item {
+  height: 70px;
+}
+
+/* Navbar links styles */
+.nav-links {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Navbar links hover effect */
+.nav-links:hover {
+  color: var(--hover-color);
+}
+
+/* Theme toggle button styles */
+.theme-toggle {
+  background: var(--button-background);
+  color: var(--button-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.theme-toggle:hover {
+  background: var(--button-hover-background);
+}
+
+/* Light theme variables */
+.light {
+  --background-color: white;
+  --text-color: black;
+  --border-color: #ddd;
+  --button-background: #eee;
+  --button-color: black;
+  --button-hover-background: #ddd;
+  --hover-color: #555;
+}
+
+/* Dark theme variables */
+.dark {
+  --background-color: black;
+  --text-color: white;
+  --border-color: #444;
+  --button-background: #666;
+  --button-color: white;
+  --button-hover-background: #555;
+  --hover-color: #ddd;
+}
+
+/* Responsive navbar styles */
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+
+  .theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-25%, 50%);
+  }
+}

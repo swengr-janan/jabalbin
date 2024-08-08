@@ -27,12 +27,6 @@ button {
   cursor: pointer;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 1rem;
+main {
+  padding: 1rem;
 }

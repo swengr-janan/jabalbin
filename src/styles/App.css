@@ -4,13 +4,13 @@ body {
 }
 
 .light {
-  background-color: white;
-  color: black;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .dark {
-  background-color: black;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 header {
@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-color);
 }
 
 button {
@@ -27,12 +27,6 @@ button {
   cursor: pointer;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 1rem;
+main {
+  padding: 1rem;
 }
