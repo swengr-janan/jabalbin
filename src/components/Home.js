@@ -3,18 +3,13 @@ import "../styles/Home.css"; // Ensure you have the correct path to your CSS fil
 
 function Home() {
   return (
-    <div className="home-container">
-      {/* Replace the video element with an image element */}
-      <img src="/bg-black.jpg" alt="Hero" className="hero-image" />
-      <div className="overlay"></div>
-      <div className="content">
-        <div className="description left">
-          <p>Quality Assurance Specialist</p>
-        </div>
-        <img src="/Balbz.png" alt="My Face" className="face-image" />
-        <div className="description right">
-          <p>Software Engineer</p>
-        </div>
+    <div id="home" className="home-container">
+      <div className="home-text">
+        <h1>Hi, I'm John Anthony L. Balbin!</h1>
+        <h2>Get to know me more in my portfolio</h2>
+      </div>
+      <div className="home-image">
+        <img src="/Balbz.png" alt="John Anthony L. Balbin" />
       </div>
     </div>
   );

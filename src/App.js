@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -9,21 +9,27 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <div className="hero"></div>
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/socials" element={<Socials />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+    <div>
+      <Navbar />
+      <div className="hero"></div>
+      <main>
+        <section id="home">
+          <Home />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <section id="socials">
+          <Socials />
+        </section>
+      </main>
+    </div>
   );
 }
 

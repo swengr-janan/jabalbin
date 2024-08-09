@@ -7,6 +7,10 @@ body {
   font-family: Arial, sans-serif; /* Set a default font */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }

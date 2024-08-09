@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import "../styles/Navbar.css"; // Ensure you have the correct path to your CSS file
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // Add state for burger menu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +23,10 @@ function Navbar() {
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen); // Toggle burger menu state
+  };
+
   let navbarClasses = ["navbar"];
   if (scrolled) {
     navbarClasses.push("scrolled");
@@ -30,31 +35,60 @@ function Navbar() {
   return (
     <nav className={navbarClasses.join(" ")}>
       <div className="navbar-container">
-        <NavLink to="/" className="navbar-logo">
-          <img src="/ja-logo.png" alt="My Logo" style={{ height: "200px" }} />
-        </NavLink>
-        <ul className="nav-menu">
+        <div class="navbar-logo">
+          <img src="/ja-logo.png" alt="Logo" />
+        </div>
+        <ul className={`nav-menu ${isOpen ? "is-active" : ""}`}>
+          {" "}
+          {/* Add conditional class for mobile menu */}
           <li className="nav-item">
-            <NavLink to="/about" className="nav-links">
+            <Link to="home" className="nav-links" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="about" className="nav-links" smooth={true} duration={500}>
               About
-            </NavLink>
+            </Link>
           </li>
           <li className="nav-item">
-            <NavLink to="/projects" className="nav-links">
+            <Link
+              to="projects"
+              className="nav-links"
+              smooth={true}
+              duration={500}
+            >
               Projects
-            </NavLink>
+            </Link>
           </li>
           <li className="nav-item">
-            <NavLink to="/contact" className="nav-links">
+            <Link
+              to="contact"
+              className="nav-links"
+              smooth={true}
+              duration={500}
+            >
               Contact
-            </NavLink>
+            </Link>
           </li>
           <li className="nav-item">
-            <NavLink to="/socials" className="nav-links">
+            <Link
+              to="socials"
+              className="nav-links"
+              smooth={true}
+              duration={500}
+            >
               Socials
-            </NavLink>
+            </Link>
           </li>
         </ul>
+        <div className="navbar-burger" onClick={toggleMenu}>
+          {" "}
+          {/* Add burger menu */}
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
   );

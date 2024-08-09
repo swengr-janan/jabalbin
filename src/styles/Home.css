@@ -2,45 +2,58 @@
 
 .home-container {
   position: relative;
-  text-align: center;
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  padding-top: 100px; /* Add padding to avoid overlap with navbar */
+  height: 100vh; /* Full viewport height */
+  color: white; /* Ensure text is readable on dark background */
+  overflow: hidden; /* Ensure pseudo-element does not overflow */
 }
 
-.hero-image {
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
+.home-container::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adjust the overlay color and opacity as needed */
+  background-image: url("/bg-black.jpg"); /* Path to the background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  filter: blur(4px); /* Apply blur effect */
+  z-index: -1; /* Ensure it is behind the content */
 }
 
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.home-text {
+  flex: 1;
+  padding: 20px;
+  z-index: 1; /* Ensure text is above the background */
+}
+
+.home-text h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.home-text h2 {
+  font-size: 1.5em;
+  color: #ddd; /* Light color for better readability */
+}
+
+.home-image {
+  flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add top margin to the image */
+  z-index: 1; /* Ensure image is above the background */
 }
 
-.description {
-  margin: 0 20px;
-}
-
-.face-image {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+.home-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }

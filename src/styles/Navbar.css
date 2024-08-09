@@ -1,20 +1,16 @@
-/* Navbar.css */
-
 .navbar {
-  background: transparent; /* Initial background is fully transparent */
-  height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-size: 1rem; /* Smaller font size */
-  position: fixed; /* Ensure the navbar stays at the top */
-  top: 0;
+  padding: 10px 20px; /* Adjust padding to reduce size */
+  background-color: transparent; /* Make navbar transparent */
+  color: white;
+  position: fixed;
   width: calc(100% - 40px); /* Adjust width to account for margin */
-  margin: 10px 20px; /* Add margin around the navbar */
-  border-radius: 10px; /* Add smooth border radius */
-  z-index: 10;
-  transition: background 0.3s ease-in-out, margin 0.3s ease-in-out,
-    border-radius 0.3s ease-in-out;
+  top: 10px; /* Adjust top to add margin */
+  margin: 0 20px; /* Add margin */
+  height: 60px; /* Set fixed height for navbar */
+  z-index: 1000; /* Ensure navbar is above other elements */
 }
 
 .navbar.scrolled {
@@ -31,37 +27,99 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1500px;
-  padding: 0 20px;
 }
 
 .navbar-logo {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+  position: relative; /* Required for the pseudo-element */
+}
+
+.navbar-logo img {
+  height: 200px; /* Set logo height */
+  max-height: 100%; /* Ensure logo does not exceed navbar height */
+  display: block; /* Ensure the image is treated as a block element */
+  position: relative; /* Required for the pseudo-element */
+}
+
+.navbar-logo img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.5)
+  );
+  transform: skewX(-25deg);
+  transition: left 0.5s ease;
+}
+
+.navbar-logo img:hover::before {
+  left: 100%;
 }
 
 .nav-menu {
   display: flex;
-  align-items: center;
-  list-style: none;
-  text-align: center;
+  gap: 20px;
+}
+
+.nav-menu.is-active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(27, 26, 25, 0.5);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 999; /* Ensure menu is above other elements */
+  padding: 10px 0; /* Add padding to the menu */
 }
 
 .nav-item {
-  height: 80px;
+  list-style: none;
+  margin: 10px 0; /* Add margin to each item */
 }
 
 .nav-links {
-  color: #fff; /* Ensure text color is white */
-  display: flex;
-  align-items: center;
+  color: white;
   text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
+  padding: 10px 15px; /* Adjust padding for better spacing */
+  cursor: pointer; /* Add pointer cursor on hover */
+  font-weight: normal; /* Ensure initial font weight is normal */
+  transition: text-shadow 0.3s ease; /* Add transition for smooth effect */
 }
 
 .nav-links:hover {
-  color: #f0f0f0; /* Change to your desired hover color */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Add outer glow to text on hover */
+}
+
+.navbar-burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-burger span {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.is-active {
+    display: flex;
+  }
+
+  .navbar-burger {
+    display: flex;
+  }
 }
