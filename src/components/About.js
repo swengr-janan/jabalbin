@@ -7,58 +7,52 @@ const About = () => {
       <div className="about-section software-engineer">
         <div className="icon">🛠️</div>
         <h2>Software Engineer</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam.
+        <p style={{ fontSize: "0.9em", display: "block" }}>
+          As a Software Engineer with over seven years of experience, I have
+          worked on Web Development and Blockchain Technology projects across
+          various industries, including automotive and embedded systems. My
+          background includes international experience, having worked in both
+          Japan and the Philippines.
         </p>
-        <ul className="tech-stack">
-          <li>C Language</li>
-          <li>C++</li>
-          <li>Visual Basic</li>
-          <li>PHP</li>
-          <li>MySQL</li>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>ReactJS</li>
-          <li>JIRA</li>
-          <li>VS Code</li>
-        </ul>
+        <p style={{ fontSize: "0.9em", display: "block" }}>
+          <strong>
+            • C Language • C++ • Visual Basic • PHP • MySQL • JavaScript • HTML
+            • CSS • ReactJS • JIRA • VS Code
+          </strong>
+        </p>
       </div>
       <div className="about-section qa-specialist">
         <div className="icon">🔧</div>
         <h2>QA Specialist</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam.
+        <p style={{ fontSize: "0.9em", display: "block" }}>
+          As a Quality Assurance Specialist, I have a strong focus on ensuring
+          the reliability and functionality of software products across various
+          industries. My expertise lies in identifying defects, optimizing
+          testing processes, and collaborating closely with development teams to
+          enhance overall product quality.
         </p>
-        <ul className="tech-stack">
-          <li>Cygwin</li>
-          <li>Green Hills Software</li>
-          <li>Hidemaru</li>
-          <li>JIRA</li>
-          <li>Confluence</li>
-          <li>Araxis Merge</li>
-          <li>Cypress</li>
-          <li>Appium</li>
-          <li>Manual and Automated Testing</li>
-          <li>Functional Testing</li>
-          <li>Performance Testing</li>
-          <li>Regression Testing</li>
-        </ul>
+        <p style={{ fontSize: "0.9em", display: "block" }}>
+          <strong>
+            • Cygwin • Green Hills Software • Hidemaru • JIRA • Confluence •
+            Araxis Merge • Cypress • Appium • Manual and Automated Testing •
+            Functional Testing • Performance Testing • Regression Testing
+          </strong>
+        </p>
       </div>
       <div className="about-section web-scrapper">
         <div className="icon">🕸️</div>
         <h2>Web Scrapper</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-          odio. Praesent libero. Sed cursus ante dapibus diam.
+        <p style={{ fontSize: "0.9em", display: "block" }}>
+          As a Web Scrapper, I specialize in extracting valuable data from
+          various websites and transforming it into actionable insights. My
+          skills include writing efficient scraping scripts, handling large
+          datasets, and ensuring data accuracy and integrity.
         </p>
-        <ul className="tech-stack">
-          <li>Jupyter</li>
-          <li>Python</li>
-        </ul>
+        <p style={{ fontSize: "0.9em", display: "block" }}>
+          <strong>
+            • Python • BeautifulSoup • Scrapy • Selenium • Pandas • NumPy
+          </strong>
+        </p>
       </div>
     </div>
   );
