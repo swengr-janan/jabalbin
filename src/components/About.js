@@ -1,27 +1,67 @@
 import React from "react";
-import "../styles/About.css"; // Ensure you have the correct path to your CSS file
+import "../styles/About.css";
 
-function About() {
+const About = () => {
   return (
-    <div id="about" className="about-container">
-      <img src="/Balbz.png" alt="My Face" className="about-image" />
-      <div className="about-text">
+    <div className="about-container">
+      <div className="about-section software-engineer">
+        <div className="icon">🛠️</div>
         <h2>Software Engineer</h2>
         <p>
-          A Dynamic Software Engineer / QA Engineer with over 7 years of
-          versatile experience in the field, blending multiple disciplines to
-          deliver exceptional results. My passion lies in ensuring top-notch
-          software quality through proficient testing methodologies and
-          cutting-edge tools. Skilled in creating and executing comprehensive
-          test plans, I excel in conducting rigorous regression and user
-          acceptance testing. My keen eye for detail enables me to adeptly
-          identify and meticulously document defects in software products,
-          driving continuous improvement and delivering unparalleled user
-          experiences.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio. Praesent libero. Sed cursus ante dapibus diam.
         </p>
+        <ul className="tech-stack">
+          <li>C Language</li>
+          <li>C++</li>
+          <li>Visual Basic</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>ReactJS</li>
+          <li>JIRA</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+      <div className="about-section qa-specialist">
+        <div className="icon">🔧</div>
+        <h2>QA Specialist</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio. Praesent libero. Sed cursus ante dapibus diam.
+        </p>
+        <ul className="tech-stack">
+          <li>Cygwin</li>
+          <li>Green Hills Software</li>
+          <li>Hidemaru</li>
+          <li>JIRA</li>
+          <li>Confluence</li>
+          <li>Araxis Merge</li>
+          <li>Cypress</li>
+          <li>Appium</li>
+          <li>Manual and Automated Testing</li>
+          <li>Functional Testing</li>
+          <li>Performance Testing</li>
+          <li>Regression Testing</li>
+        </ul>
+      </div>
+      <div className="about-section web-scrapper">
+        <div className="icon">🕸️</div>
+        <h2>Web Scrapper</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio. Praesent libero. Sed cursus ante dapibus diam.
+        </p>
+        <ul className="tech-stack">
+          <li>Jupyter</li>
+          <li>Python</li>
+        </ul>
       </div>
     </div>
   );
-}
+};
 
 export default About;

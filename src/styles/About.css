@@ -1,30 +1,110 @@
-/* About.css */
-
 .about-container {
   display: flex;
+  flex-direction: row; /* Ensure sections are displayed horizontally */
+  justify-content: center; /* Center the sections horizontally */
+  align-items: center; /* Center the sections vertically */
+  height: 100vh; /* Full height of the viewport */
+  background-color: white; /* Background color for the container */
+  color: black; /* Font color */
+  padding: 20px; /* Padding around the container */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.about-section {
+  flex: 1;
+  padding: 20px; /* Padding for each section */
+  border-right: 1px solid #ddd; /* Divider between sections */
+  text-align: center; /* Center-align text */
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 50px;
-  background-color: #f9f9f9;
+  height: 100%; /* Ensure each section takes full height */
 }
 
-.about-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-right: 20px;
+.about-section:last-child {
+  border-right: none; /* Remove border from the last section */
 }
 
-.about-text {
-  max-width: 600px;
+.about-section .icon {
+  font-size: 3em; /* Larger size of the icon */
+  margin-bottom: 10px; /* Space between icon and title */
 }
 
-.about-text h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+.about-section h2 {
+  font-size: 2em; /* Larger font size for h2 */
+  margin-bottom: 10px; /* Space below the heading */
+  background: -webkit-linear-gradient(
+    #ff6f61,
+    #e65a50
+  ); /* Gradient for the title */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative; /* Position relative for the pseudo-element */
 }
 
-.about-text p {
-  font-size: 1.2em;
-  line-height: 1.6;
+.about-section h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px; /* Position the underline just below the text */
+  transform: translateX(-50%);
+  width: 50%; /* Width of the underline */
+  height: 2px; /* Height of the underline */
+  background: linear-gradient(
+    to right,
+    transparent,
+    #ff6f61,
+    transparent
+  ); /* Fading effect */
+}
+.about-section p {
+  font-size: 1.2em; /* Larger font size for paragraphs */
+  margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.tech-stack {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  font-size: 1em; /* Larger font size for tech stack */
+}
+
+.tech-stack li {
+  margin: 5px 0; /* Space between list items */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+    height: auto; /* Adjust height for vertical stacking */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .about-section {
+    border-right: none; /* Remove border between sections */
+    border-bottom: 1px solid #ddd; /* Add bottom border between sections */
+    height: auto; /* Adjust height for vertical stacking */
+    padding: 10px; /* Adjust padding for smaller screens */
+    width: 100%; /* Ensure sections take full width */
+  }
+
+  .about-section:last-child {
+    border-bottom: none; /* Remove bottom border from the last section */
+  }
+
+  .about-section .icon {
+    font-size: 2em; /* Adjust icon size for smaller screens */
+  }
+
+  .about-section h2 {
+    font-size: 1.5em; /* Adjust heading size for smaller screens */
+  }
+
+  .about-section p {
+    font-size: 1em; /* Adjust paragraph size for smaller screens */
+  }
+
+  .tech-stack {
+    font-size: 0.9em; /* Adjust tech stack font size for smaller screens */
+  }
 }
