@@ -62,7 +62,7 @@ const Home = () => {
       <div className="home-image">
         <img
           src="/Balbzie.png"
-          alt="Your Image"
+          alt="JA Balbin"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
       </div>

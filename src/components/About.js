@@ -5,7 +5,11 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="about-section software-engineer">
-        <div className="icon">🛠️</div>
+        <div className="icon">
+          <span role="img" aria-label="hammer and wrench">
+            🛠️
+          </span>
+        </div>
         <h2>Software Engineer</h2>
         <p style={{ fontSize: "0.9em", display: "block" }}>
           As a Software Engineer with over seven years of experience, I have
@@ -14,7 +18,7 @@ const About = () => {
           background includes international experience, having worked in both
           Japan and the Philippines.
         </p>
-        <p style={{ fontSize: "0.9em", display: "block" }}>
+        <p style={{ fontSize: "1.2em", display: "block" }}>
           <strong>
             • C Language • C++ • Visual Basic • PHP • MySQL • JavaScript • HTML
             • CSS • ReactJS • JIRA • VS Code
@@ -22,7 +26,12 @@ const About = () => {
         </p>
       </div>
       <div className="about-section qa-specialist">
-        <div className="icon">🔧</div>
+        <div className="icon">
+          <span role="img" aria-label="wrench">
+            🔧
+          </span>
+        </div>
+
         <h2>QA Specialist</h2>
         <p style={{ fontSize: "0.9em", display: "block" }}>
           As a Quality Assurance Specialist, I have a strong focus on ensuring
@@ -31,7 +40,7 @@ const About = () => {
           testing processes, and collaborating closely with development teams to
           enhance overall product quality.
         </p>
-        <p style={{ fontSize: "0.9em", display: "block" }}>
+        <p style={{ fontSize: "1.2em", display: "block" }}>
           <strong>
             • Cygwin • Green Hills Software • Hidemaru • JIRA • Confluence •
             Araxis Merge • Cypress • Appium • Manual and Automated Testing •
@@ -40,7 +49,11 @@ const About = () => {
         </p>
       </div>
       <div className="about-section web-scrapper">
-        <div className="icon">🕸️</div>
+        <div className="icon">
+          <span role="img" aria-label="spider web">
+            🕸️
+          </span>
+        </div>
         <h2>Web Scrapper</h2>
         <p style={{ fontSize: "0.9em", display: "block" }}>
           As a Web Scrapper, I specialize in extracting valuable data from
@@ -48,7 +61,7 @@ const About = () => {
           skills include writing efficient scraping scripts, handling large
           datasets, and ensuring data accuracy and integrity.
         </p>
-        <p style={{ fontSize: "0.9em", display: "block" }}>
+        <p style={{ fontSize: "1.2em", display: "block" }}>
           <strong>
             • Python • BeautifulSoup • Scrapy • Selenium • Pandas • NumPy
           </strong>
