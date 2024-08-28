@@ -50,18 +50,19 @@
   font-weight: normal; /* Ensure h2 text is not bold */
 }
 
-.social-media {
+.social-media-home {
   margin-top: 20px;
+  justify-content: start;
 }
 
-.social-media a {
+.social-media-home a {
   color: white;
   margin: 0 10px;
   font-size: 2.5em; /* Increase font size to make buttons larger */
   transition: color 0.3s, text-shadow 0.3s;
 }
 
-.social-media a:hover {
+.social-media-home a:hover {
   color: #ddd; /* Light color on hover */
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Glow effect */
 }

@@ -1,0 +1,43 @@
+.footer {
+  background-color: #333; /* Solid dark background */
+  color: #fff; /* White text color */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  gap: 20px; /* Add gap to control the space between logo and text */
+}
+
+.logo {
+  width: 150px; /* Increased width */
+  height: auto;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-media a {
+  color: #007bff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #0056b3;
+}
+
+.footer p {
+  margin: 0;
+}

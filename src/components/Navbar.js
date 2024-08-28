@@ -71,16 +71,16 @@ function Navbar() {
               Contact
             </Link>
           </li>
-          <li className="nav-item">
-            <Link
-              to="socials"
-              className="nav-links"
-              smooth={true}
-              duration={500}
-            >
-              Socials
-            </Link>
-          </li>
+          {/* <li className="nav-item">
+              <Link
+                to="socials"
+                className="nav-links"
+                smooth={true}
+                duration={500}
+              >
+                Socials
+              </Link>
+            </li> */}
         </ul>
         <div className="navbar-burger" onClick={toggleMenu}>
           {" "}
