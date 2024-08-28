@@ -1,33 +1,41 @@
 .contact-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 20px;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  height: 100vh;
   box-sizing: border-box;
   margin: 20px;
 }
 
 .clipart-container {
-  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .contact-container h2 {
   margin-bottom: 10px; /* Reduce the bottom margin */
 }
+
 .contact-container p {
   margin-top: 0; /* Remove the top margin */
 }
+
 .clipart-container img {
   max-width: 100%;
   height: auto;
+  border-top-left-radius: 15px; /* Round the top-left corner */
+  border-top-right-radius: 0; /* Round the top-right corner */
+  border-bottom-left-radius: 0; /* Keep the bottom-left corner sharp */
+  border-bottom-right-radius: 0; /* Keep the bottom-right corner sharp */
 }
 
 .form-container {
-  flex: 1;
+  width: 100%;
+  max-width: 600px;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -66,4 +74,17 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  .clipart-container,
+  .form-container {
+    width: 48%;
+  }
 }

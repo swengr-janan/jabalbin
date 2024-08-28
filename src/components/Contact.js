@@ -7,7 +7,12 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(
+        "service_1nnh73v",
+        "template_cus524o",
+        e.target,
+        "C1MG7ujT7furn1szD"
+      )
       .then(
         (result) => {
           alert("Email sent successfully!");
@@ -21,11 +26,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="clipart-container">
-        <img
-          src="https://example.com/unique-clipart.png"
-          alt="Contact Clipart"
-          className="clipart"
-        />
+        <img src="./contact.png" alt="Contact Clipart" className="clipart" />
       </div>
       <div className="form-container">
         <form id="contact-form" onSubmit={sendEmail}>
