@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "49b64bb0625174e50d913dd6e4a98aef",
+    "revision": "0f774ae8c244e80614bf406cf7cb1118",
     "url": "/jabalbin/index.html"
   },
   {
