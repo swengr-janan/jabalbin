@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f774ae8c244e80614bf406cf7cb1118",
+    "revision": "2adfec6ad08ed21da1a8c95d7efdef56",
     "url": "/jabalbin/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jabalbin/static/css/2.3fd03513.chunk.css"
   },
   {
-    "revision": "780284f494dc74a7f7a9",
+    "revision": "affcfe0bd603f40618be",
     "url": "/jabalbin/static/css/main.0e75018d.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/jabalbin/static/js/2.73e104a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "780284f494dc74a7f7a9",
-    "url": "/jabalbin/static/js/main.0fbf8fa1.chunk.js"
+    "revision": "affcfe0bd603f40618be",
+    "url": "/jabalbin/static/js/main.1bc7550b.chunk.js"
   },
   {
     "revision": "4dd8a7c284b86f5ced23",
