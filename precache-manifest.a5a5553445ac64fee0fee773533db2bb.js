@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85a7cac265715cf8cc204ce2acad9c6d",
+    "revision": "986a12f5ffaec8da6bf3203937fd14a8",
     "url": "/jabalbin/index.html"
   },
   {
-    "revision": "2f3d711489b365330bd2",
+    "revision": "ed5d6e62f68ffc0db58f",
     "url": "/jabalbin/static/css/2.3fd03513.chunk.css"
   },
   {
-    "revision": "fddd4bc98a2053b3c694",
-    "url": "/jabalbin/static/css/main.2a930a18.chunk.css"
+    "revision": "7a5217971b5b2d6abfd3",
+    "url": "/jabalbin/static/css/main.c92fd547.chunk.css"
   },
   {
-    "revision": "2f3d711489b365330bd2",
-    "url": "/jabalbin/static/js/2.73e104a2.chunk.js"
+    "revision": "ed5d6e62f68ffc0db58f",
+    "url": "/jabalbin/static/js/2.a5186fa0.chunk.js"
   },
   {
     "revision": "60f6bf9e100e456690e9ab6c9a37bfc2",
-    "url": "/jabalbin/static/js/2.73e104a2.chunk.js.LICENSE.txt"
+    "url": "/jabalbin/static/js/2.a5186fa0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fddd4bc98a2053b3c694",
-    "url": "/jabalbin/static/js/main.26452778.chunk.js"
+    "revision": "7a5217971b5b2d6abfd3",
+    "url": "/jabalbin/static/js/main.e6849f63.chunk.js"
   },
   {
     "revision": "4dd8a7c284b86f5ced23",
