@@ -36,7 +36,7 @@ function Navbar() {
     <nav className={navbarClasses.join(" ")}>
       <div className="navbar-container">
         <div class="navbar-logo">
-          <img src="/ja-logo.png" alt="Logo" />
+          <img src={`${process.env.PUBLIC_URL}/ja-logo.png`} alt="Logo" />
         </div>
         <ul className={`nav-menu ${isOpen ? "is-active" : ""}`}>
           {" "}

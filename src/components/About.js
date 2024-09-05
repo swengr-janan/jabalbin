@@ -56,10 +56,12 @@ const About = () => {
         </div>
         <h2>Web Scrapper</h2>
         <p style={{ fontSize: "0.9em", display: "block" }}>
-          As a Web Scrapper, I specialize in extracting valuable data from
-          various websites and transforming it into actionable insights. My
-          skills include writing efficient scraping scripts, handling large
-          datasets, and ensuring data accuracy and integrity.
+          Recently delved into the fascinating world of web scraping and quickly
+          became intrigued by its potential. I began by extracting valuable data
+          from various websites and converting it into actionable insights.
+          Along the way, I developed skills in writing efficient scraping
+          scripts, managing large datasets, and ensuring the accuracy and
+          integrity of the data collected.
         </p>
         <p style={{ fontSize: "1.2em", display: "block" }}>
           <strong>

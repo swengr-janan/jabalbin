@@ -17,7 +17,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/bg-black.jpg"); /* Path to the background image */
   background-size: cover; /* Cover the entire container */
   filter: blur(4px); /* Add blur effect */
   z-index: -1; /* Ensure the background is behind the content */
@@ -115,7 +114,7 @@
     font-size: 1.2em;
   }
 
-  .social-media a {
+  .social-media-home a {
     font-size: 1.5em; /* Adjust font size for smaller screens */
   }
 

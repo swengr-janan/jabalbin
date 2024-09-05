@@ -14,7 +14,11 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <img src="./favicon.png" alt="Logo" className="logo" />
+        <img
+          src={`${process.env.PUBLIC_URL}/favicon.png`}
+          alt="Logo"
+          className="logo"
+        />
         <p className="copyright">&copy; John Anthony Balbin | 2024</p>
       </div>
       <div className="social-media">

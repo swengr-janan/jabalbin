@@ -26,7 +26,11 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="clipart-container">
-        <img src="./contact.png" alt="Contact Clipart" className="clipart" />
+        <img
+          src={`${process.env.PUBLIC_URL}/contact.png`}
+          alt="Contact Clipart"
+          className="clipart"
+        />
       </div>
       <div className="form-container">
         <form id="contact-form" onSubmit={sendEmail}>
