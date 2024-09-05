@@ -8,9 +8,14 @@ import {
   FaTwitter,
   FaHackerrank,
   FaEnvelope,
+  FaArrowUp, // Import the arrow icon
 } from "react-icons/fa";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-top">
@@ -72,6 +77,9 @@ const Footer = () => {
           <FaEnvelope />
         </a>
       </div>
+      <button className="back-to-top" onClick={scrollToTop}>
+        <FaArrowUp />
+      </button>
     </footer>
   );
 };

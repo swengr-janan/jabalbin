@@ -52,7 +52,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className="projects-container">
-      <h1>My Projects</h1>
+      <h1>Discover my Featured Projects</h1>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <ProjectCard

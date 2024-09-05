@@ -1,0 +1,97 @@
+.certifications-section {
+  padding: 30px; /* Reduced padding */
+  background-color: #f9f9f9;
+  text-align: center;
+  margin: 20px;
+}
+
+.certifications-section h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 40px; /* Smaller font size */
+}
+
+.certifications-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Reduced gap */
+}
+
+.certification-item {
+  flex: 1 1 calc(50% - 20px); /* Two columns with smaller gap */
+  background-color: #fff;
+  padding: 15px; /* Reduced padding */
+  margin: 5px; /* Reduced margin */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+  text-align: left;
+}
+
+.certification-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.certification-item h3 {
+  margin-top: 0;
+  font-size: 18px; /* Smaller font size */
+}
+
+.certification-item p {
+  margin: 5px 0; /* Reduced margin */
+  font-size: 14px; /* Smaller font size */
+}
+
+.certification-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px; /* Smaller font size */
+  transition: color 0.3s;
+}
+
+.certification-item a:hover {
+  color: #0056b3;
+}
+
+.cert-thumbnail {
+  width: 60px; /* Adjust the size as needed */
+  height: auto;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .certification-item {
+    flex: 1 1 100%; /* Single column layout */
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+
+  .certification-content {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .certification-item h3 {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .certification-item p {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .certification-item a {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  .cert-thumbnail {
+    width: 40px; /* Smaller width for better visibility */
+    margin-left: 0; /* Remove left margin */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

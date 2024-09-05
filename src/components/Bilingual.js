@@ -4,7 +4,7 @@ import "../styles/Bilingual.css"; // Create this CSS file for styling
 const Bilingual = () => {
   return (
     <div className="bilingual-section">
-      <h2>Language Proficiency & Certifications</h2>
+      <h2>Language Proficiency</h2>
       <div className="bilingual-columns">
         <div className="bilingual-column">
           <h3>PTE Academic (Superior English)</h3>

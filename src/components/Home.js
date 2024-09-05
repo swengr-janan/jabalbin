@@ -11,7 +11,7 @@ const Home = () => {
       <div className="home-container">
         <div className="home-text">
           <h1>Hi, I'm John Anthony Balbin!</h1>
-          <h2>Get to know me more in my portfolio</h2>
+          <h2>Explore my professional journey in my portfolio</h2>
           <div className="social-media-home">
             <a
               href="https://www.linkedin.com/in/jabalbin/"

@@ -1,16 +1,20 @@
 .bilingual-section {
   padding: 50px;
   background-color: #f9f9f9;
+  text-align: center;
+  margin: 20px; /* Add margin to match the Contact section */
 }
 
 .bilingual-section h2 {
-  text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 40px;
 }
 
 .bilingual-columns {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
 }
 
 .bilingual-column {
@@ -18,13 +22,26 @@
   margin: 0 10px;
 }
 
-.bilingual-column h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .bilingual-section {
+    padding: 30px; /* Adjust padding for mobile */
+  }
 
-.bilingual-column iframe {
-  width: 100%;
-  height: 100vh; /* Adjust this value as needed */
-  border: none;
+  .bilingual-section h2 {
+    font-size: 30px; /* Smaller font size for mobile */
+  }
+
+  .bilingual-columns {
+    flex-direction: column; /* Single column layout */
+    gap: 10px; /* Reduced gap for mobile */
+  }
+
+  .bilingual-column {
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+
+  .bilingual-column iframe {
+    height: 400px; /* Adjust iframe height for mobile */
+  }
 }

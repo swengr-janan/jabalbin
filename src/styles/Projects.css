@@ -17,13 +17,7 @@
 }
 .projects-container h1 {
   font-size: 2.5em; /* Adjust font size */
-  background: -webkit-linear-gradient(
-    #ff6f61,
-    #e65a50
-  ); /* Gradient for the title */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative; /* Position relative for the pseudo-element */
+  color: black;
 }
 
 .projects-container h2 {

@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./styles/App.css";
 import Bilingual from "./components/Bilingual";
+import Certifications from "./components/Certifications";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         </section>
         <section id="bilingual">
           <Bilingual />
+        </section>
+        <section id="certifications">
+          <Certifications />
         </section>
         <section id="contact">
           <Contact />

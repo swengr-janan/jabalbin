@@ -63,6 +63,16 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
+              to="bilingual"
+              className="nav-links"
+              smooth={true}
+              duration={500}
+            >
+              Language & Certifications
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
               to="contact"
               className="nav-links"
               smooth={true}
