@@ -12,7 +12,7 @@ const About = () => {
         </div>
         <h2>Software Engineer</h2>
         <p style={{ fontSize: "0.9em", display: "block" }}>
-          As a Software Engineer with over seven years of experience, I have
+          As a Software Engineer with over eight years of experience, I have
           worked on Web Development and Blockchain Technology projects across
           various industries, including automotive and embedded systems. My
           background includes international experience, having worked in both
@@ -51,21 +51,20 @@ const About = () => {
       <div className="about-section web-scrapper">
         <div className="icon">
           <span role="img" aria-label="spider web">
-            🕸️
+            🧠
           </span>
         </div>
-        <h2>Web Scrapper</h2>
+        <h2>Data Analyst</h2>
         <p style={{ fontSize: "0.9em", display: "block" }}>
-          Recently delved into the fascinating world of web scraping and quickly
-          became intrigued by its potential. I began by extracting valuable data
-          from various websites and converting it into actionable insights.
-          Along the way, I developed skills in writing efficient scraping
-          scripts, managing large datasets, and ensuring the accuracy and
-          integrity of the data collected.
+          At JEG & Sons Inc., I extracted and analyzed e-commerce data,
+          leveraging web scraping to transform raw information into actionable
+          insights. I optimized data workflows, ensuring accuracy and efficiency
+          in decision-making.
         </p>
         <p style={{ fontSize: "1.2em", display: "block" }}>
           <strong>
-            • Python • BeautifulSoup • Scrapy • Selenium • Pandas • NumPy
+            • Power BI • Microsoft NAV • Python • BeautifulSoup • Scrapy •
+            Selenium • Pandas • NumPy
           </strong>
         </p>
       </div>
