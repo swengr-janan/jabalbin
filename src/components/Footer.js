@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaGithub,
   FaTwitter,
+  FaTelegram,
   FaHackerrank,
   FaEnvelope,
   FaArrowUp, // Import the arrow icon
@@ -61,6 +62,13 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <FaTwitter />
+        </a>
+        <a
+          href="https://t.me/janbalbin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTelegram />
         </a>
         <a
           href="https://www.hackerrank.com/profile/janny_dev"

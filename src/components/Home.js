@@ -42,12 +42,20 @@ const Home = () => {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://x.com/0xb4Lb1N"
+              href="https://x.com/plootweb3"
               target="_blank"
               rel="noopener noreferrer"
             >
               <i className="fab fa-twitter"></i>
             </a>
+            <a
+              href="https://t.me/janbalbin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-telegram"></i>
+            </a>
+
             <a
               href="https://www.hackerrank.com/profile/janny_dev"
               target="_blank"
